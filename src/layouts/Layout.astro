@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Portfolio" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="flex flex-col min-h-screen">
+		<nav
+			class="flex flex-row place-content-center p-4 bg-blue-1 text-white"
+		>
+			<h2>
+				<a href="#a-propos" class="mx-4 text-center">A propos de moi</a>
+			</h2>
+			<h2><a href="#projets" class="mx-4">Mes Projets</a></h2>
+			<h2>
+				<a
+					href="https://www.linkedin.com/in/timoth%C3%A9-recoura-071774308"
+					target="_blank"
+					class="mx-4">LinkedIn</a>
+			</h2>
+		</nav>
+		<main class="mb-auto flex flex-col items-center px-12">
+			<slot />
+		</main>
+		<footer
+			class="flex flex-row place-content-center p-4 bg-blue-1 text-white"
+		>
+			<a href="https://github.com/trecoura/portfolio" target="_blank"
+				>Code source</a
+			>
+		</footer>
+	</body>
+</html>

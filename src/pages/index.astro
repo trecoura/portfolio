@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
+---
+
+<Layout title="Portfolio">
+	<h1 id="a-propos" class="m-8">A propos de moi</h1>
+	<p class="w-1/2 text-center">
+		Je m'appelle Timothé Recoura et j'ai 20 ans.<br />
+		Je suis un étudiant en 3e année de BUT Informatique à l'IUT2 de Grenoble,
+		suivant le parcours orienté vers l'administration des systèmes et des réseaux.<br
+		/>
+		Vous pouvez retrouver ci-dessous mes principaux projets menés dans le cadre
+		de mon BUT.
+	</p>
+	<div
+		class="flex flex-col items-center min-w-full bg-blue-1 rounded-2xl text-white m-12"
+	>
+		<h1 id="projets" class="m-8">Mes projets</h1>
+		<Project
+			title="Projet de formation - Création d'un site web institutionnel d'une entreprise du secteur numérique, « Pour les nuls »"
+			year="2021-2022"
+			description="Réalisation d'un site statique avec un groupe de six personnes avec HTML/CSS. Toutes les entreprises communiquent avec leur environnement. Un élément-clef de cette communication repose sur leur site web. Cependant, cette communication est souvent commerciale, orientée pour des professionnels et surfant sur les thèmes en vogue. Le public visé ici est, par exemple, des lycéens ou étudiants qui ne connaissent pas le monde de l'entreprise et qui veulent choisir un stage, un métier en connaissance de cause."
+			image="/src/assets/sae1-56.png"
+		/>
+		<Project
+			title="Projet de formation - Création d'un programme de classification automatique de dépêches"
+			year="2022"
+			description="Création d'un programme de classification automatique de dépêches en Java, par groupe de deux personnes. Le programme attribue l'une des 5 catégories suivantes à chaque dépêche : Environnement-Sciences, Culture, Economie, Politique, Sport. Pour réaliser cette classification, le programme s'appuyer sur des mots marquant l'appartenance à une catégorie particulière. Par exemple, les mots match et joueur semblent indiquer l'appartenance à la catégorie SPORTS. Ainsi, pour chaque catégorie, un lexique correspondant à un ensemble de mots « marqueurs » est généré automatiquement en utilisant un jeu de dépêches dont on connait la catégorie. À chaque mot est associé un poids correspondant au degré avec lequel le mot indique l'appartenance à la catégorie. Ensuite, pour chaque dépêche, un score est calculé pour chacune des cinq catégories, et la catégorie attribuée à la dépêche est celle obtenant le plus haut score."
+			image="/src/assets/sae1-1.png"
+		/>
+
+		<Project
+			title="Projet de formation - Développement d'une application de gestion de brocantes"
+			year="2022"
+			description="Conception et développement d'une application d'organisation et de planification d'évènements de brocantes, destinée aux associations et mairies. Réalisé avec Java et JavaFX, en groupe de six personnes."
+			image="/src/assets/sae2.png"
+		/>
+
+		<Project
+			title="Projet de formation - Développpement d'un site web de ventes aux enchères"
+			year="2022-2023"
+			description="Conception, développement et déploiement d'un site web de ventes aux enchères avec PHP, JavaScript et une base de données PostgreSQL avec un groupe de six personnes."
+			image="/src/assets/sae3.png"
+		/>
+
+		<Project
+			title="Projet de formation - Création d'un site web de e-commerce"
+			year="2023"
+			description="Création d'un site web de e-commerce avec le framework PHP « Symfony »."
+			image="/src/assets/symfony.png"
+		/>
+
+		<Project
+			title="Stage - Mise en œuvre de l'outil Ansible"
+			year="2023"
+			description="Stage de 10 semaines dans l'entreprise CORIM Solutions, à Fontaine. Mise en œuvre de l'outil Ansible pour les mises à jour Windows & Ubuntu Server, le déploiement d'environnements applicatifs, de NGINX/HAProxy et conteneur Docker, et intégration avec Git. Evaluation de différentes GUI (AWX, Semaphore, Rundeck)."
+			image="/src/assets/stage2023.png"
+		/>
+
+		<Project
+			title="Projet de formation - GameJam en Python"
+			year="2023"
+			description="Création d'un jeu en Python avec PyGame et de type Beat'em all, en groupe de quatre personnes."
+			image="/src/assets/gamejam.png"
+		/>
+
+		<Project
+			title="Projet de formation - Conception & mise en œuvre d'une infrastructure réseau"
+			year="2023-2024"
+			description="Configuration de services réseaux (DHCP, DNS, LDAP, Kerberos, NFS, Zabbix, Apache, PostgreSQL, Postfix/SpamAssassin) sur machines virtuelles Debian. Veille technologique sur 3 outils de détection d'intrusion (Snort, Suricata, Zeek) et intégration de la solution choisie (Suricata)."
+			image="/src/assets/sae5.jpg"
+		/>
+
+		<Project
+			title="Stage - Administration Systèmes & Réseaux"
+			year="2024"
+			description="Stage de 14 semaines dans l'entreprise CORIM Solutions. Mise en place de l'IDP Keycloak avec 2FA et SAML. Mise en place des solutions Teleport et Pomerium. Refonte des réseaux Wi-Fi avec segmentation & VLAN. Evaluation de 3 solutions de RMM : Action 1, Tactical RMM et WAPT."
+			image="/src/assets/stage2024.jpg"
+		/>
+	</div>
+</Layout>
